@@ -35,7 +35,7 @@ invade($example)->methodWithArgs('arg1', 'arg2'); // Call private method with ar
 
 (new Invader($example))->property; // Access private property
 (new Invader($example))->property = 'new value'; // Set private property
-(new Invader($example))->method(...$args); // Call private method
+(new Invader($example))->method(); // Call private method
 (new Invader($example))->methodWithArgs('arg1', 'arg2'); // Call private method with arguments
 
 ```
