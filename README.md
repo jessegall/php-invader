@@ -26,16 +26,16 @@ class ExampleClass
 
 $example = new ExampleClass();
 
-invade($class)->property; // Access private property
-invade($class)->property = 'new value'; // Set private property
-invade($class)->method(); // Call private method
-invade($class)->methodWithArgs('arg1', 'arg2'); // Call private method with arguments
+invade($example)->property; // Access private property
+invade($example)->property = 'new value'; // Set private property
+invade($example)->method(); // Call private method
+invade($example)->methodWithArgs('arg1', 'arg2'); // Call private method with arguments
 
 # -- Or --
 
-(new Invader($class))->property; // Access private property
-(new Invader($class))->property = 'new value'; // Set private property
-(new Invader($class))->method(...$args); // Call private method
-(new Invader($class))->methodWithArgs('arg1', 'arg2'); // Call private method with arguments
+(new Invader($example))->property; // Access private property
+(new Invader($example))->property = 'new value'; // Set private property
+(new Invader($example))->method(...$args); // Call private method
+(new Invader($example))->methodWithArgs('arg1', 'arg2'); // Call private method with arguments
 
 ```
