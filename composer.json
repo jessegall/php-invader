@@ -1,0 +1,28 @@
+{
+    "name": "jessegall/invader",
+    "description": "A simple package to access private properties and methods without the use of reflection",
+    "autoload": {
+        "psr-4": {
+            "JesseGall\\Invader\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Jesse Gall",
+            "email": "jesse-gall@hotmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "@php ./vendor/bin/phpunit tests --testdox --colors=auto"
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "license": "MIT"
+}
