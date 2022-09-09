@@ -5,10 +5,10 @@ use JesseGall\Invader\Invader;
 if (! function_exists('invade')) {
     /**
      * @template T of object
-     * @param object $target
-     * @return Invader<T>
+     * @param T $target
+     * @return T
      */
-    function invade(object $target): Invader
+    function invade(object $target)
     {
         return new Invader($target);
     }
