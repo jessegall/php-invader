@@ -4,9 +4,7 @@ use JesseGall\Invader\Invader;
 
 if (! function_exists('invade')) {
     /**
-     * @template T of object
-     * @param T $target
-     * @return T
+     * @return object
      */
     function invade(object $target)
     {
